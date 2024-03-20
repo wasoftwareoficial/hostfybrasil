@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hostify </title>
+    <title>Hostfy Brasil</title>
     <link rel="shortcut icon" href="assets/img/icohostfy.ico" type="image/x-icon">
     <script src="tailwind_css/cdn.tailwindcss.com_3.3.2"></script>
     <link rel="stylesheet" href="assets/css/style.css">
@@ -16,6 +16,9 @@
     <meta property="og:image" content="https://www.hostinger.com/og-image.png">
 </head>
 <body>
+    <div class="barra">
+        <p>Não perca a chance de economizar: <a href="#plano">Aproveite a oferta agora</a> ></p>
+    </div>
     <div id="modal-container">
         <!-- Modais serão adicionados dinamicamente aqui -->
     </div>
@@ -267,7 +270,7 @@
         <div class="w-full" id="svg-container">
             <div class="max-w-[1150px] w-11/12 flex flex-col gap-[18px] mx-auto justify-around items-center py-[30px]">
                 <h1 class="font-semibold text-4xl text-center" style="color:#2F1C6A">Escolha o seu plano de hospedagem na web</h1>
-                <div class="flex lg:flex-row flex-col gap-[25px] justify-between mt-16">
+                <div id="plano" class="flex lg:flex-row flex-col gap-[25px] justify-between mt-16">
                     <div id="plan1" class="w-full max-w-[390px] hover:scale-[1.02] hover:duration-300" style="border:1px solid #D5DFFF; border-radius:6px; box-shadow: 0px 0px 20px #eceaea;">
                         <div class="flex flex-col px-8 py-12 gap-[40px] text-center" class="svg-container">
                             <div class="flex flex-col gap-[7px]">
@@ -1600,6 +1603,16 @@
     }
 
     btnMobileLinkHospedagem.addEventListener("click", modalLinkMobileHospedagem)
+
+    //Fazer o menu navBar ficar no topo quando rolar a pagina
+    window.addEventListener('scroll', function() {
+        let navBar = document.getElementById('navBar');
+        if (window.pageYOffset > 0) {
+            navBar.style.top = '0';
+        } else {
+            navBar.style.top = '38px'; //Mantém o valor original quando o scroll for para o topo da página
+        }
+    });
 
 </script>
 </html>

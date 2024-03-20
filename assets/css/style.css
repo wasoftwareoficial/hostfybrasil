@@ -187,3 +187,22 @@ body {
   align-items: flex-start;
   padding-left: 20px;
 }
+
+.barra {
+  height: 35px;
+  width: 100%;
+  background-color: rgba(255, 255, 0, 0.808);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.barra:hover {
+  background-color: rgb(207, 207, 10);
+}
+
+.barra a {
+  font-weight: 900;
+  text-decoration: underline;
+}
