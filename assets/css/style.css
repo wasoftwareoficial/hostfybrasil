@@ -1,0 +1,189 @@
+html,
+body {
+  top:0; margin:0; padding:0; width:100%; height:100%;
+  font-family: 'DM Sans', sans-serif;
+}
+
+@media screen and (max-width: 1100px) {
+  .pt-2 {
+    position: relative !important;
+    top: 0px !important;
+    padding-top: 0rem !important;
+  }
+  .gap-\[20px\] {
+    gap: 5px !important;
+  }
+  .navHome  {
+    position: relative !important;
+    top: 0px !important;
+    right: 0px !important;
+  }
+  .logo img {
+    width: 140px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #plan1 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #plan3 {
+    display: block;
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
+.mobile-menu-open {
+  display: block;
+}
+.logo img {
+  width: 200px;
+}
+.pt-2 {
+  position: absolute;
+  top: 0px;
+}
+.navHome  {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+/* Estilos para os modais do menu */
+.modal-wordpress,
+.modal-hospedagem  {
+  display: none;
+  width: 380px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgb(153, 150, 150);
+  position: fixed;
+  top: 22%;
+  left: 62%;
+  z-index: 102;
+  padding: 20px 20px 20px 30px;
+}
+
+.modal-wordpress.ativo,
+.modal-hospedagem.ativo {
+  display: block;
+}
+
+.modal-wordpress .links,
+.modal-hospedagem .links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-wordpress .links .icon-link,
+.modal-hospedagem .links .icon-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.modal-wordpress a,
+.modal-hospedagem a {
+  color: rgb(41, 41, 139);
+  font-size: 18px;
+  font-weight: 700;
+}
+.modal-wordpress .icon-link,
+.modal-hospedagem .icon-link {
+  transition: 0.3s;
+}
+.modal-wordpress .icon-link:hover,
+.modal-hospedagem .icon-link:hover {
+  transform: scale(1.05);
+}
+.modal-wordpress a p,
+.modal-hospedagem a p{
+  color: rgb(138, 138, 194);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Estilos para os modais do plano */
+.modalPlano {
+  display: none;
+  position: absolute;
+  background-color: #673de6;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  z-index: 9999;
+  opacity: 0; 
+  transition: opacity 0.5s ease;
+}
+
+.modalPlano.active {
+    opacity: 1;
+}
+
+/* Estilos para os ícones SVG */
+.svg-icon {
+  cursor: pointer;
+}
+
+/* Estilos para os botoes de contrar, iniciar e adicionar ao carrinho */
+.btn-plano,
+.btn-planoP {
+  transition: 0.5s;
+}
+
+.btn-plano:hover {
+  background-color: #4b25d3 !important;
+}
+
+.btn-planoP:hover {
+  background-color: #fd2566 !important;
+}
+
+/*Opçoes do menu modal mobile*/
+.mobile-modal,
+.mobile-modalHospedagem {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.mobile-modal.ativo,
+.mobile-modalHospedagem.ativo {
+  display: flex;
+}
+
+
+.mobile-modal .link-mobile,
+.mobile-modalHospedagem .link-mobileHospedagem {
+  color: rgb(41, 41, 139);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.mobile-modal .link-mobile p,
+.mobile-modalHospedagem .link-mobileHospedagem p {
+  color: rgb(138, 138, 194);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.links-mobile,
+.links-mobileHospedagem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link-mobile,
+.link-mobileHospedagem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+}
